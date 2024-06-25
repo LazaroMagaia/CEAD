@@ -9,9 +9,7 @@
         <h5 class="modal-title" id="agendashowModal{{$agenda->id}}">Atualizar Sessão de Tutoria</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <form action="{{ route('tutor.agenda.update', ['id' => $agenda->id]) }}" method="POST" enctype="multipart/form-data">
-        @csrf
-        @method('PUT')
+    
         <div class="modal-body">
             <div class="row">
                 <div class="col-md-6 mb-3">
@@ -45,14 +43,11 @@
                     </ol>
                 </div>
             </div>
-
-
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-          <button type="submit" class="btn btn-primary">Salvar</button>
         </div>
-      </form>
+
     </div>
   </div>
 </div>

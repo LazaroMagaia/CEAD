@@ -70,7 +70,7 @@
                         @csrf
                         <button class="dropdown-item" type="submit">
                           <i class="bx bx-power-off me-2"></i>
-                          <span class="align-middle">Log Out</span>
+                          <span class="align-middle">Sair</span>
                         </button>
                       </form>
                       
