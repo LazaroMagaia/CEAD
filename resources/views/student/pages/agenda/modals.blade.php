@@ -27,6 +27,16 @@
                     <input type="text" class="form-control" id="assunto" name="assunto"  disabled
                     value="{{ $agenda->assunto }}">
                 </div>
+                <div class="col-md-6 mb-3">
+                    @php
+                        $tutor = \App\Models\Tutor::find($agenda->tutor_id);
+                        $tutor_name =\App\Models\User::find($agenda->tutor_id)->name;
+                    @endphp
+                    <label for="assunto" class="form-label">Docente</label>
+                    <input type="text" class="form-control" id="assunto" name="assunto"  disabled
+                    value="{{$tutor_name}}">
+                </div>
+
                 <div class="col-md-12 mb-3">
                     <label for="informacoes_adicionais" class="form-label">Informações Adicionais</label>
                     <textarea class="form-control" id="informacoes_adicionais" disabled
